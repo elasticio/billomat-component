@@ -19,23 +19,23 @@
     },
     "actions":{
         "createClient":{
-            "main":"./actions/createClient.js",
+            "main":"./lib/actions/createClient.js",
             "title":"Create Client",
             "metadata": {
-                "in": "./metadata/createClient.in.json",
-                "out": "./metadata/createClient.out.json"
+                "in": "./lib/metadata/createClient.in.json",
+                "out": "./lib/metadata/createClient.out.json"
             }
         },
         "createInvoice": {
-            "main":"./actions/createInvoice.js",
+            "main":"./lib/actions/createInvoice.js",
             "title":"Create Invoice",
             "metadata": {
-                "in": "./metadata/createInvoice.in.json",
-                "out": "./metadata/createInvoice.out.json"
+                "in": "./lib/metadata/createInvoice.in.json",
+                "out": "./lib/metadata/createInvoice.out.json"
             }
         },
         "completeInvoice": {
-            "main":"./actions/completeInvoice.js",
+            "main":"./lib/actions/completeInvoice.js",
             "title":"Complete Invoice",
             "metadata": {
                 "in": {
@@ -61,7 +61,7 @@
             }
         },
         "emailInvoice": {
-            "main":"./actions/emailInvoice.js",
+            "main":"./lib/actions/emailInvoice.js",
             "title":"Send Invoice",
             "metadata": {
                 "in": {
