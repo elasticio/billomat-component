@@ -1,0 +1,20 @@
+{
+    "invoice": {
+        "client_id": 121212,
+        "title": "Invoice #123456",
+        "invoice-items": [
+            {
+                "invoice-item": {
+                    "title": "Item 1",
+                    "quantity": 1
+                }
+            },
+            {
+                "invoice-item": {
+                    "title": "Item 2",
+                    "quantity": 2
+                }
+            }
+        ]
+    }
+}

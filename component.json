@@ -1,0 +1,125 @@
+{
+    "title": "Billomat",
+    "description": "The simple online service for quoting, billing and more",
+    "credentials": {
+        "fields": {
+            "billomatId": {
+                "viewClass": "TextFieldView",
+                "label": "Your Billomat ID",
+                "required": true,
+                "placeholder": "Paste your Billomat ID Here"
+            },
+            "apiKey": {
+                "viewClass": "TextFieldView",
+                "label": "Your API Key",
+                "required": true,
+                "placeholder": "Paste your API Key Here"
+            }
+        }
+    },
+    "actions":{
+        "createClient":{
+            "main":"./actions/createClient.js",
+            "title":"Create Client",
+            "metadata": {
+                "in": "./metadata/createClient.in.json",
+                "out": "./metadata/createClient.out.json"
+            }
+        },
+        "createInvoice": {
+            "main":"./actions/createInvoice.js",
+            "title":"Create Invoice",
+            "metadata": {
+                "in": "./metadata/createInvoice.in.json",
+                "out": "./metadata/createInvoice.out.json"
+            }
+        },
+        "completeInvoice": {
+            "main":"./actions/completeInvoice.js",
+            "title":"Complete Invoice",
+            "metadata": {
+                "in": {
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "title": "Invoice ID",
+                            "type": "string",
+                            "required": true
+                        }
+                    }
+                },
+                "out":  {
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "title": "Invoice ID",
+                            "type": "string",
+                            "required": true
+                        }
+                    }
+                }
+            }
+        },
+        "emailInvoice": {
+            "main":"./actions/emailInvoice.js",
+            "title":"Send Invoice",
+            "metadata": {
+                "in": {
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "title": "Invoice ID",
+                            "type": "string",
+                            "required": true
+                        },
+                        "from": {
+                            "title": "From",
+                            "type": "string",
+                            "required": false
+                        },
+                        "recipients": {
+                            "type": "object",
+                            "properties": {
+                                "to": {
+                                    "title": "E-mail address",
+                                    "type": "string",
+                                    "required": false
+                                },
+                                "cc": {
+                                    "title": "CC to",
+                                    "type": "string",
+                                    "required": false
+                                }
+                            }
+                        },
+                        "subject": {
+                            "title": "E-mail subject",
+                            "type": "string",
+                            "required": false
+                        },
+                        "body": {
+                            "title": "E-mail body",
+                            "type": "string",
+                            "required": false
+                        },
+                        "filename": {
+                            "title": "Invoice filename",
+                            "type": "string",
+                            "required": false
+                        }
+                    }
+                },
+                "out":  {
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "title": "Invoice ID",
+                            "type": "string",
+                            "required": true
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

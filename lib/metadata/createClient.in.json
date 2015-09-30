@@ -1,0 +1,200 @@
+{
+    "type": "object",
+    "properties": {
+        "client": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "title": "Client ID",
+                    "type": "number"
+                },
+                "archived": {
+                    "title": "Archived",
+                    "type": "number"
+                },
+                "number_pre": {
+                    "title": "Client number prefix",
+                    "type": "string"
+                },
+                "number": {
+                    "title": "Client number",
+                    "type": "number"
+                },
+                "number_length": {
+                    "title": "Client number length",
+                    "type": "number"
+                },
+                "name": {
+                    "title": "Company name",
+                    "type": "string"
+                },
+                "street": {
+                    "title": "Street",
+                    "type": "string"
+                },
+                "zip": {
+                    "title": "ZIP code",
+                    "type": "string"
+                },
+                "city": {
+                    "title": "City",
+                    "type": "string"
+                },
+                "state": {
+                    "title": "State",
+                    "type": "string"
+                },
+                "country_code": {
+                    "title": "Country Code",
+                    "type": "string"
+                },
+                "first_name": {
+                    "title": "First name",
+                    "type": "string"
+                },
+                "last_name": {
+                    "title": "Last name",
+                    "type": "string"
+                },
+                "salutation": {
+                    "title": "Salutation",
+                    "type": "string"
+                },
+                "phone": {
+                    "title": "Phone",
+                    "type": "string"
+                },
+                "fax": {
+                    "title": "Fax",
+                    "type": "string"
+                },
+                "mobile": {
+                    "title": "Mobile number",
+                    "type": "string"
+                },
+                "email": {
+                    "title": "Email",
+                    "type": "string"
+                },
+                "www": {
+                    "title": "Website",
+                    "type": "string"
+                },
+                "tax_number": {
+                    "title": "Tax number",
+                    "type": "string"
+                },
+                "vat_number": {
+                    "title": "VAT number",
+                    "type": "string"
+                },
+                "bank_account_number": {
+                    "title": "Bank account number",
+                    "type": "string"
+                },
+                "bank_account_owner": {
+                    "title": "Bank account number",
+                    "type": "string"
+                },
+                "bank_number": {
+                    "title": "Bank identifier code",
+                    "type": "string"
+                },
+                "bank_name": {
+                    "title": "Bank name",
+                    "type": "string"
+                },
+                "bank_swift": {
+                    "title": "SWIFT/BIC",
+                    "type": "string"
+                },
+                "bank_iban": {
+                    "title": "IBAN",
+                    "type": "string"
+                },
+                "sepa_mandate": {
+                    "title": "SEPA mandate",
+                    "type": "string"
+                },
+                "sepa_mandate_date": {
+                    "title": "SEPA mandate date",
+                    "type": "string"
+                },
+                "tax_rule": {
+                    "title": "Tax Rule",
+                    "type": "string",
+                    "enum": [
+                        "TAX", "NO_TAX", "COUNTRY"
+                    ]
+                },
+                "default_payment_types": {
+                    "title": "Payment Types",
+                    "type": "string"
+                },
+                "net_gross": {
+                    "title": "Price basis",
+                    "type": "string",
+                    "enum": [
+                        "NET", "GROSS", "SETTINGS"
+                    ]
+                },
+                "note": {
+                    "title": "Note",
+                    "type": "string"
+                },
+                "discount_rate_type": {
+                    "title": "Discount rate type",
+                    "type": "string",
+                    "enum": [
+                        "SETTINGS", "ABSOLUTE", "RELATIVE"
+                    ]
+                },
+                "discount_rate": {
+                    "title": "Discount Rate",
+                    "type": "number"
+                },
+                "discount_days_type": {
+                    "title": "Discount days type",
+                    "type": "string",
+                    "enum": [
+                        "SETTINGS", "ABSOLUTE", "RELATIVE"
+                    ]
+                },
+                "discount_days": {
+                    "title": "Discount Days",
+                    "type": "number"
+                },
+                "reminder_due_days_type": {
+                    "title": "Reminder due days type",
+                    "type": "string",
+                    "enum": [
+                        "SETTINGS", "ABSOLUTE", "RELATIVE"
+                    ]
+                },
+                "reminder_due_days": {
+                    "title": "Reminder due days",
+                    "type": "number"
+                },
+                "offer_validity_days_type": {
+                    "title": "Offer validity days type",
+                    "type": "string",
+                    "enum": [
+                        "SETTINGS", "ABSOLUTE", "RELATIVE"
+                    ]
+                },
+                "offer_validity_days": {
+                    "title": "Offer validity days",
+                    "type": "number"
+                },
+                "currency_code": {
+                    "title": "Currency Code",
+                    "type": "string"
+                },
+                "price_group": {
+                    "title": "Price group",
+                    "type": "number"
+                }
+            }
+        }
+    }
+}

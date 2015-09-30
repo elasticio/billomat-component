@@ -1,0 +1,222 @@
+{
+    "type": "object",
+    "properties": {
+        "invoice": {
+            "type": "object",
+            "properties": {
+                "client_id": {
+                    "title": "Client ID",
+                    "type": "number",
+                    "required": false
+                },
+                "contact_id": {
+                    "title": "Invoice Contact ID",
+                    "type": "number"
+                },
+                "address": {
+                    "title": "Invoice Address",
+                    "type": "string"
+                },
+                "number_pre": {
+                    "title": "Invoice number prefix",
+                    "type": "string"
+                },
+                "number": {
+                    "title": "Invoice number",
+                    "type": "number"
+                },
+                "number_length": {
+                    "title": "Invoice number length",
+                    "type": "number"
+                },
+                "date": {
+                    "title": "Invoice date",
+                    "type": "string"
+                },
+                "supply_date": {
+                    "title": "Invoice Supply date",
+                    "type": "string"
+                },
+                "supply_date_type": {
+                    "title": "Invoice Supply date type",
+                    "type": "string",
+                    "enum": [
+                        "SUPPLY_DATE", "DELIVERY_DATE", "SUPPLY_TEXT", "DELIVERY_TEXT"
+                    ]
+                },
+                "due_date": {
+                    "title": "Invoice Due date",
+                    "type": "string"
+                },
+                "discount_rate": {
+                    "title": "Invoice Discount rate",
+                    "type": "number"
+                },
+                "discount_date": {
+                    "title": "Invoice Discount date",
+                    "type": "string"
+                },
+                "title": {
+                    "title": "Invoice Title",
+                    "type": "string"
+                },
+                "label": {
+                    "title": "Invoice Label",
+                    "type": "string"
+                },
+                "intro": {
+                    "title": "Invoice Intro",
+                    "type": "string",
+                    "maxLength": 1024
+                },
+                "note": {
+                    "title": "Invoice Note",
+                    "type": "string",
+                    "maxLength": 1024
+                },
+                "reduction": {
+                    "title": "Invoice Reduction",
+                    "type": "string"
+                },
+                "currency_code": {
+                    "title": "Invoice Currency code",
+                    "type": "string"
+                },
+                "net_gross": {
+                    "title": "Invoice Price basis",
+                    "type": "string",
+                    "enum": [
+                        "NET", "GROSS"
+                    ]
+                },
+                "quote": {
+                    "title": "Invoice Currency quote",
+                    "type": "number"
+                },
+                "payment_types": {
+                    "title": "Invoice Payment types",
+                    "type": "string"
+                },
+                "invoice_id": {
+                    "title": "Invoice ID",
+                    "type": "number"
+                },
+                "offer_id": {
+                    "title": "Invoice Offer ID",
+                    "type": "number"
+                },
+                "confirmation_id": {
+                    "title": "Invoice Confirmation ID",
+                    "type": "number"
+                },
+                "recurring_id": {
+                    "title": "Invoice Recurring ID",
+                    "type": "number"
+                }
+            }
+        },
+        "invoice-items":{
+            "type": "array",
+            "properties": {
+                "invoice-item":{
+                    "type": "object",
+                    "properties": {
+                        "article_id": {
+                            "title": "Invoice Item Article ID",
+                            "type": "number"
+                        },
+                        "unit": {
+                            "title": "Invoice Item Unit",
+                            "type": "string"
+                        },
+                        "quantity": {
+                            "title": "Invoice Item Quantity",
+                            "type": "number"
+                        },
+                        "unit_price": {
+                            "title": "Invoice Item Price per unit",
+                            "type": "number"
+                        },
+                        "tax_name": {
+                            "title": "Invoice Item Tax Name",
+                            "type": "string"
+                        },
+                        "tax_rate": {
+                            "title": "Invoice Item Tax Rate",
+                            "type": "number"
+                        },
+                        "title": {
+                            "title": "Invoice Item Title",
+                            "type": "string"
+                        },
+                        "description": {
+                            "title": "Invoice Item Description",
+                            "type": "string"
+                        },
+                        "reduction": {
+                            "title": "Invoice Item Reduction",
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        },
+        "client": {
+            "type": "object",
+            "properties": {
+                "name": {
+                    "title": "Client Company Name",
+                    "type": "string"
+                },
+                "first_name": {
+                    "title": "Client First Name",
+                    "type": "string"
+                },
+                "last_name": {
+                    "title": "Client Last Name",
+                    "type": "string"
+                },
+                "phone": {
+                    "title": "Client Phone",
+                    "type": "string"
+                },
+                "mobile": {
+                    "title": "Client Mobile Number",
+                    "type": "string"
+                },
+                "email": {
+                    "title": "Client Email",
+                    "type": "string"
+                },
+                "street": {
+                    "title": "Client Street",
+                    "type": "string"
+                },
+                "zip": {
+                    "title": "Client ZIP Code",
+                    "type": "string"
+                },
+                "city": {
+                    "title": "Client City",
+                    "type": "string"
+                },
+                "state": {
+                    "title": "Client State",
+                    "type": "string"
+                },
+                "country_code": {
+                    "title": "Client Country Code",
+                    "type": "string"
+                },
+                "tax_number": {
+                    "title": "Client Tax Number",
+                    "type": "string"
+                },
+                "vat_number": {
+                    "title": "Client VAT Number",
+                    "type": "string"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,62 @@
+{
+    "fixtures": {
+        "completeInvoice": {
+            "msg": {
+                "body": {
+                    "id": "982704"
+                }
+            },
+            "cfg": {
+                "apiKey": "{{billomat_api_key}}",
+                "billomatId": "{{billomat_id}}"
+            }
+        },
+        "createClient": {
+            "msg": {
+                "body": {
+                    "client": {
+                        "firstName": "Bettie",
+                        "larstName": "Simpson"
+                    }
+                }
+            },
+            "cfg": {
+                "apiKey": "{{billomat_api_key}}",
+                "billomatId": "{{billomat_id}}"
+            }
+        },
+        "emailInvoiceToClient": {
+            "msg": {
+                "body": {
+                    "id": 989479,
+                    "from": "admin@acme.org",
+                    "subject": "Your invoice 123456",
+                    "body": "Your invoice is attached",
+                    "filename": "invoice_123456.pdf"
+                }
+            },
+            "cfg": {
+                "apiKey": "{{billomat_api_key}}",
+                "billomatId": "{{billomat_id}}"
+            }
+        },
+        "emailInvoiceToConfiguredRecipient": {
+            "msg": {
+                "body": {
+                    "id": 989479,
+                    "from": "admin@acme.org",
+                    "subject": "Your awesome invoice 123456",
+                    "body": "Your invoice is attached",
+                    "filename": "invoice_123456.pdf",
+                    "recipients": {
+                        "to": "{{billomat_invoice_email_recipient}}"
+                    }
+                }
+            },
+            "cfg": {
+                "apiKey": "{{billomat_api_key}}",
+                "billomatId": "{{billomat_id}}"
+            }
+        }
+    }
+}

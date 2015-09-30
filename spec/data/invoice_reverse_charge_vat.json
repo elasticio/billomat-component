@@ -1,0 +1,21 @@
+{
+    "invoice": {
+        "title": "Invoice #123456",
+        "invoice-items": [
+            {
+                "invoice-item": {
+                    "title": "Item 1",
+                    "quantity": 1
+                }
+            },
+            {
+                "invoice-item": {
+                    "title": "Item 2",
+                    "quantity": 2
+                }
+            }
+        ],
+        "note": "Reverse Charge Procedure / VAT taxable at recipient / DK123",
+        "client_id": 123456
+    }
+}

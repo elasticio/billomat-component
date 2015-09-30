@@ -1,0 +1,122 @@
+{
+    "type": "object",
+    "properties": {
+        "invoice": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "title": "ID",
+                    "type": "number",
+                    "required": true
+                },
+                "client_id": {
+                    "title": "Client ID",
+                    "type": "number",
+                    "required": true
+                },
+                "contact_id": {
+                    "title": "Contact ID",
+                    "type": "number"
+                },
+                "address": {
+                    "title": "Address",
+                    "type": "string"
+                },
+                "number_pre": {
+                    "title": "Invoice number prefix",
+                    "type": "string"
+                },
+                "number": {
+                    "title": "Invoice number",
+                    "type": "number"
+                },
+                "number_length": {
+                    "title": "Invoice number length",
+                    "type": "number"
+                },
+                "date": {
+                    "title": "Invoice date",
+                    "type": "string"
+                },
+                "supply_date": {
+                    "title": "Supply date",
+                    "type": "string"
+                },
+                "supply_date_type": {
+                    "title": "Supply date type",
+                    "type": "string",
+                    "enum": [
+                        "SUPPLY_DATE", "DELIVERY_DATE", "SUPPLY_TEXT", "DELIVERY_TEXT"
+                    ]
+                },
+                "due_date": {
+                    "title": "Due date",
+                    "type": "string"
+                },
+                "discount_rate": {
+                    "title": "Discount rate",
+                    "type": "number"
+                },
+                "discount_date": {
+                    "title": "Discount date",
+                    "type": "string"
+                },
+                "title": {
+                    "title": "Title",
+                    "type": "string"
+                },
+                "label": {
+                    "title": "Label",
+                    "type": "string"
+                },
+                "intro": {
+                    "title": "Intro",
+                    "type": "string"
+                },
+                "note": {
+                    "title": "Note",
+                    "type": "string"
+                },
+                "reduction": {
+                    "title": "Reduction",
+                    "type": "string"
+                },
+                "currency_code": {
+                    "title": "Currency code",
+                    "type": "string"
+                },
+                "net_gross": {
+                    "title": "Price basis",
+                    "type": "string",
+                    "enum": [
+                        "NET", "GROSS"
+                    ]
+                },
+                "quote": {
+                    "title": "Currency quote",
+                    "type": "number"
+                },
+                "payment_types": {
+                    "title": "Payment types",
+                    "type": "string"
+                },
+                "invoice_id": {
+                    "title": "Invoice ID",
+                    "type": "number"
+                },
+                "offer_id": {
+                    "title": "Offer ID",
+                    "type": "number"
+                },
+                "confirmation_id": {
+                    "title": "Confirmation ID",
+                    "type": "number"
+                },
+                "recurring_id": {
+                    "title": "Recurring ID",
+                    "type": "number"
+                }
+            }
+        }
+    }
+}
