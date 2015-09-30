@@ -1,7 +1,7 @@
 describe('Billomat completeInvoice', function() {
 
     var completeInvoice = require('../lib/actions/completeInvoice.js');
-    var nock        = require('nock');
+    var nock = require('nock');
 
     var cfg = {
         billomatId: 'billomatid',
