@@ -1,8 +1,10 @@
 # billomat-component
 
-> Billomat component for the [elastic.io platform](http://www.elastic.io "elastic.io platform")
+> Billomat _component template_ for the [elastic.io platform](http://www.elastic.io "elastic.io platform")
 
 This is an open source component template for [Billomat](http://www.billomat.com/) Online Billing Software which is developed specifically to run on [elastic.io platform](http://www.elastic.io "elastic.io platform"). You can clone it and change it as you wish. However, **if you plan to deploy it into [elastic.io platform](http://www.elastic.io "elastic.io platform") you must follow sets of instructions to succseed**. 
+
+> **PLEASE NOTE:** This is a working component for **Billomat** Online Billing Software, however, it may not be suitable for every use case. Not all functionalities are included in this component template. **It is your responsibility to add and modify this component to suit your integration needs.** 
 
 ## Before you Begin
 
